@@ -25,7 +25,7 @@ category:
 
 {{#partial "page"}}
 
-<div id="customerInfo" style="display: none; background-image: url(https://wwwcdn.bigcommerce.com/www1.bigcommerce.com/assets/marketplace/bigcommerce-marketplace-header-image.jpg?mtime=20180815123632); height: 250px; color: #fff; padding: 80px;">
+<div id="customerInfo" style="display: none; background: url(https://cdn11.bigcommerce.com/s-ar6l1zpb8u/images/stencil/original/carousel/3/backpacks.png) no-repeat 0 50%; height: 250px; background-size: cover; height: 250px; color: #fff; padding: 80px;">
 <div style="display: flex; flex-wrap: wrap">Customer Name:&nbsp; <div id="customerName"></div></div>
 <div style="display: flex; flex-wrap: wrap">Customer Email:&nbsp; <div id="customerEmail"></div></div>
 <div style="display: flex; flex-wrap: wrap">Customer Company:&nbsp; <div id="customerCompany"></div></div>
@@ -41,16 +41,13 @@ category:
         class="category-header-image"
     }}
 {{/if}}
-
-
-
-
+<div class="special-items">
 {{#unless theme_settings.hide_category_page_heading }}
-    <h1 class="page-heading">{{category.name}}</h1> 
+    <h1 class="page-heading hello-testing">{{category.name}}</h1>
     <ul class="custom-buttons">
         <li><a href="javascript:void(0)" id="addalltocart" class="button button--small card-figcaption-button">Add All To Cart</a></li>
         <li><a href="javascript:void(0)" id="deleteallfromcart" style="display: none;" class="button button--small card-figcaption-button">Remove All Items</a></li>
-    </ul>    
+    </ul> 
     {{{region name="category_below_header"}}}
 {{/unless}}
 {{{category.description}}}
